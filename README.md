@@ -1,2 +1,3 @@
 # sukh-sangha.com
-New portfolio website - Nov 18
+
+Portfolio showcasing projects
