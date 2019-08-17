@@ -379,14 +379,6 @@ section.projects p {
 /*--------Contact Section----------*/
 /*---------------------------------*/
 
-/*
-
-Ideas:
-
-2. Details to the left and a corresponding google maps to the right with margin on all sides - matching height on list element
-
-*/
-
 .details {
 	padding-top: 60px;
 }
@@ -460,6 +452,80 @@ ion-icon{
 }
 
 /*---------------------------------*/
+/*--------Footer-Section-----------*/
+/*---------------------------------*/
+
+.footer {
+	display:grid;
+	width: 100%;
+}
+
+footer {
+	background-color: #6F1E51;
+	padding: 10px;
+	display: block;
+	bottom: 0;
+	position: static;
+	width: 100%;
+}
+
+.footer-nav {
+	list-style: none;
+	float: left;
+    padding: 0;
+    position: absolute;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links a:link,
+.social-links a:visited {
+	text-decoration: none;
+	color: #e8e8e8;
+	font-size: 80%;
+}
+
+.social-links {
+	list-style: none;
+	float: right;
+    color: #e8e8e8;
+    margin-top: 10px;
+}
+
+.footer-nav li,
+.social-links li {
+	display: inline-block;
+	margin-right: 20px;
+    margin-top: 30px;
+    font-size: 100%;
+}
+
+.copyright {
+	color: #e8e8e8;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 35%;
+	font-size: 80%;
+}
+
+.follow {
+    font-size: 80%;
+    margin-top: 20px;
+}
+
+ion-icon {
+    font-size: 40px;
+	margin-top: -20px;
+	padding-top: 15px;
+}
+
+section.footer {
+	padding: 0;
+}
+
+
+
+/*---------------------------------*/
 /*---------RESPONSIVENESS----------*/
 /*---------------------------------*/
 
@@ -470,6 +536,9 @@ ion-icon{
 }
 	.row {
 		padding: 0 2%;
+	}
+	.copyright {
+		margin-left: 20%;
 	}
 }
 
@@ -582,6 +651,15 @@ ion-icon{
 	margin-top: -180px;
 	margin-right: 5%;
 }
+.social-links ion-icon {
+    font-size: 30px;
+}
+}
+
+@media only screen and (max-width: 675px){
+	.copyright {
+		margin-left: 10%;
+	}
 }
 
 @media only screen and (max-width: 600px){
@@ -692,7 +770,24 @@ ion-icon{
 	h4 {
 		padding-top: 20px;
 	}
+	.footer-nav{
+		margin-left: 100px;
+	}
+	.social-links ion-icon {
+		padding-top: 60px;
+		padding-right: 60px;
+	}
 }
+@media only screen and (max-width: 400px){
+	.footer-nav{
+		margin-left: 60px;
+	}
+	.social-links ion-icon {
+		padding-top: 50px;
+		padding-right: 50px;
+	}
+}
+
 
 @media only screen and (max-width: 370px){
 	h3:after {
@@ -710,6 +805,9 @@ ion-icon{
 	}
 	h4 {
 		padding-top: 20px;
+	}
+	.social-links ion-icon {
+		padding-right: 30px;
 	}
 }
 
