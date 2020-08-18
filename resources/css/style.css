@@ -319,7 +319,7 @@ section.projects {
 }
 
 .box img{
-	width: 70%;
+	width: 80%;
 	height: 200px;
 	border-radius: 20px;
 	border: 3px solid #6F1E51;
@@ -802,13 +802,13 @@ section.footer {
 @media only screen and (max-width: 370px){
 	h3:after {
 		width: 220px;
-}
+	}
 	.profile-pic {
-	margin-left: 10%;
-}
+		margin-left: 10%;
+	}
 	.brief-blurb {
-	padding-right: 10%;
-}
+		padding-right: 10%;
+	}
 	section.projects img{
 		height: 150px;
 		width: auto;
@@ -827,6 +827,10 @@ section.footer {
 	}
 	.footer-nav{
 		margin-left: 40px;
+	}
+	section.projects img{
+		height: 150px;
+		width: 100%;
 	}
 }
 
