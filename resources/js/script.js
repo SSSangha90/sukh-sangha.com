@@ -61,6 +61,8 @@ $(document).ready(function(){
 	 lng: -0.5597417,
 	 title: 'Slough',
 });
+
+$('#copyrightYear').html(new Date().getFullYear());
 	
 });
 
